@@ -10,7 +10,7 @@ class proj
 		try
 		 {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/tarining","root","2204");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/training","root","2204");
 			PreparedStatement stmt=con.prepareStatement("insert into emp values(?,?,?,?,?)");
 			Scanner sc=new Scanner(System.in);
 			
